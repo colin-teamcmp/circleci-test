@@ -1,9 +1,22 @@
 version: 2
 jobs:
-  build:
+  job1:
     docker:
       - image: circleci/php:7.2.8-apache-node-browsers
     steps:
       - checkout
       - run: echo "hello world"
-      - gofuckyourself
+      - run: sleep 15
+  job2:
+    docker:
+      - image: circleci/php:7.2.8-apache-node-browsers
+    steps:
+      - checkout
+      - run: echo "hello world 2"
+      - sleep 2
+workflows:
+  version: 2
+  one_and_two:
+    jobs:
+      - job1
+      - job2
