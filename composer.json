@@ -1,0 +1,16 @@
+{
+    "name": "colin-teamcmp/circleci-test",
+    "autoload": {
+        "psr-4": {
+            "Cmp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Unit\\Cmp\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    }
+}
