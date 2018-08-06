@@ -12,4 +12,10 @@ class ExampleTest extends TestCase
         $a = new Example();
         $this->assertEquals(2, $a->testReturns2());
     }
+
+    public function test_will_fail()
+    {
+        $a = new Example();
+        $this->assertEquals(3, $a->testReturns2());
+    }
 }
