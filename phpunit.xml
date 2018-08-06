@@ -3,8 +3,8 @@
         stopOnFailure               = "false"
         stopOnError                 = "false">
     <testsuites>
-        <testsuite name="Tests">
-            <directory>Tests</directory>
+        <testsuite name="tests">
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>
